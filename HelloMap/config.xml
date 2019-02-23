@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.cordova.hellocordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>HelloCordova</name>
+<widget id="org.myapp.map" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>HelloMap</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
@@ -23,13 +23,9 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-    <preference name="phonegap-version" value="cli-8.0.0" />
-    <preference name="android-minSdkVersion" value="19" />
-    <plugin name="cordova-plugin-googlemaps">
+    <plugin name="cordova-plugin-googlemaps" spec="^2.5.1">
         <variable name="API_KEY_FOR_ANDROID" value="AIzaSyCEvNMnyj3iBmlV2hZ-HUZeMtvScBpuRpQ" />
         <variable name="API_KEY_FOR_IOS" value="AIzaSyAZXRwxPx5Y24Qkc-ieG6u7R71swS9A10Q" />
     </plugin>
     <engine name="ios" spec="^4.5.5" />
-    <engine name="android" spec="^7.0.0" />
-    <engine name="browser" spec="~5.0.4" />
 </widget>
